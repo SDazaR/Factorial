@@ -1,8 +1,11 @@
+import co.jimezam.util.Dialogo;
+
 size(500,500);
 //n-ésimo termino a calcular
-int n=13;
+String str = Dialogo.preguntar("N-ÉSIMO TÉRMINO", "Ingrese el n-ésimo término de la serie Factorial:", Dialogo.TIPO_PREGUNTA);
+int n = Integer.parseInt(str);
 background(0,0,255);
-//variables para el for
+//variables para los for
 int f=0;
 int j=0;
 int p=0;
